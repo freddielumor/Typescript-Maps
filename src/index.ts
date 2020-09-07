@@ -1,6 +1,12 @@
 import { CustomMap } from "./CustomMap";
-// import { User } from "./User";
+import { User } from "./User";
 // import { Company } from "./Company";
 
-// Initialise new google map
-new CustomMap("map");
+// Add New User Instance
+const user = new User();
+
+// Initialise New Map
+const customMap = new CustomMap("map");
+
+// Add User Marker
+customMap.addUserMarker(user);
