@@ -1,12 +1,12 @@
 import { CustomMap } from "./CustomMap";
 import { User } from "./User";
-// import { Company } from "./Company";
+import { Company } from "./Company";
 
-// Add New User Instance
+// New user/company/map instances
 const user = new User();
-
-// Initialise New Map
+const company = new Company();
 const customMap = new CustomMap("map");
 
-// Add User Marker
+// Add markers
 customMap.addUserMarker(user);
+customMap.addCompanyMarker(company);
